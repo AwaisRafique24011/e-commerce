@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Awais Shopping Center</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .login-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .login-form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .login-form input[type="email"],
+        .login-form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .login-form input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            Awais Shopping Centre
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="sign.html">Signup</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Welcome to Awais Shopping Center!</h1>
+        <p>Login to your account to continue shopping with us!</p>
+        
+        <div class="login-form">
+            <form action="submit_login.php" method="post">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+
+                <input type="submit" value="Login">
+            </form>
+        </div>
+        
+        <h2>Why Choose Us?</h2>
+        <p>Awais Shopping Center is committed to providing you with the best shopping experience possible. With our vast selection of high-quality products, competitive prices, and exceptional customer service, we strive to make your online shopping experience convenient, enjoyable, and hassle-free.</p>
+
+        <p>Whether you're shopping for electronics, fashion, home goods, or gifts, we have everything you need to meet your needs and exceed your expectations. Join our community of satisfied customers today and discover why Awais Shopping Center is the ultimate destination for all your shopping needs!</p>
+    </div>
+    <footer>
+        <p>&copy; 2024 Awais Shopping Center. All rights reserved.</p>
+    </footer>
+</body>
+</html>
